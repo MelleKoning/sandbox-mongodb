@@ -70,7 +70,7 @@ and setup the replica set configuration
 
 >config={ "_id" : "my-mongo-set", "members" : [ { "_id" : 0, "host" : "mongo1:27017" }, { "_id":1,"host":"mongo2:27018"},{"_id":2,"host":"mongo3:27019"}]}
 
-following tells the test-database about the three different instances of mongo1, mongo2, mongo3
+following tells the mongo-instance about the replica-set with its three different instances of mongo1, mongo2, mongo3
 
  >rs.initiate(config) 
 
