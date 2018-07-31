@@ -28,7 +28,7 @@ func TestCursor(t *testing.T) {
 
 	var pipeline interface{} // set up pipeline
 
-	cur, err := coll.Watch(ctx, pipeline) // can only be done against a MongoDB REPLICA set
+	cur, err := coll.Watch(ctx, pipeline) // Watch can only be done against a MongoDB REPLICA set
 	if err != nil {
 		// Handle err
 		fmt.Println(err)
